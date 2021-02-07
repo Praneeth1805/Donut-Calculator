@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    try{
+    int number;
+    Scanner inputName = new Scanner (System.in);
+    System.out.print("Please enter the number of donuts you ate:");
+    number = inputName.nextInt();
+    System.out.println("Number of calories conusmed ="+ number*150);
+    inputName.close();
+    }catch(Exception e){
+      System.out.println("Please enter number only");
+    }
+  }
+}
